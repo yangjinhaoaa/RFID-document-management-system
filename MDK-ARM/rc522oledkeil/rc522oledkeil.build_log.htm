@@ -1,0 +1,141 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: yj yj, sdjz, LIC=76F5U-SAEIE-74YS0-BFXEV-TV5YH-BQ18L
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.29.0.0
+Toolchain Path:  C:\Keil\Keilv5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.36.5.0
+ 
+<h2>Project:</h2>
+c:\Users\yjh\Desktop\pjaddadc\oledromrt\MDK-ARM\rc522oledkeil.uvprojx
+Project File Date:  05/07/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil\Keilv5\ARM\ARMCC\Bin'
+Build target 'rc522oledkeil'
+compiling main.c...
+../Core/Inc/rc522.h(132): warning:  #1-D: last line of file ends without a newline
+  void MFRC522_Halt(void);
+../Core/Src/main.c(139): warning:  #870-D: invalid multibyte character sequence
+    printf("eepromå·²ä¿å­˜æ–‡æ¡£æ•°ï¼?%d\n", eep00);
+../Core/Src/main.c(156): warning:  #870-D: invalid multibyte character sequence
+        printf("savedid%dè¡?%dåˆ? %d\n", is, ik, savedid[is][ik]);
+../Core/Src/main.c(156): warning:  #870-D: invalid multibyte character sequence
+        printf("savedid%dè¡?%dåˆ? %d\n", is, ik, savedid[is][ik]);
+../Core/Src/main.c(162): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+    sprintf(timestr, "%02d:%02d:%02d\r\n", ntime.hour, ntime.minutes, ntime.seconds);
+../Core/Src/main.c(164): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+    sprintf(timestr, "20%02d-%02d-%02d\r\n", ntime.year, ntime.month, ntime.dayofmonth);
+../Core/Src/main.c(244): warning:  #870-D: invalid multibyte character sequence
+              printf("æ–‡æ¡£åœ?%dè¡?%dåˆ? \n", docloca[0], docloca[1]);
+../Core/Src/main.c(244): warning:  #870-D: invalid multibyte character sequence
+              printf("æ–‡æ¡£åœ?%dè¡?%dåˆ? \n", docloca[0], docloca[1]);
+../Core/Src/main.c(244): warning:  #870-D: invalid multibyte character sequence
+              printf("æ–‡æ¡£åœ?%dè¡?%dåˆ? \n", docloca[0], docloca[1]);
+../Core/Src/main.c(245): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(screenstr, "H%dL%d", docloca[0], docloca[1]);
+../Core/Src/main.c(249): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(screenstr, "%X%X%X%X", CardID[0], CardID[1], CardID[2], CardID[3]);
+../Core/Src/main.c(254): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(docid, "%c%c%c%c%c%c%c%c%c%c%c%c%c%c", docidraw[0],docidraw[1],docidraw[2],docidraw[3],docidraw[4],docidraw[5],docidraw[6],docidraw[7],docidraw[8],docidraw[9],docidraw[10],docidraw[11],docidraw[12],docidraw[13],docidraw[14]);
+../Core/Src/main.c(254): warning:  #175-D: subscript out of range
+              sprintf(docid, "%c%c%c%c%c%c%c%c%c%c%c%c%c%c", docidraw[0],docidraw[1],docidraw[2],docidraw[3],docidraw[4],docidraw[5],docidraw[6],docidraw[7],docidraw[8],docidraw[9],docidraw[10],docidraw[11],docidraw[12],docidraw[13],docidraw[14]);
+../Core/Src/main.c(254): warning:  #225-D: the format string ends before this argument
+              sprintf(docid, "%c%c%c%c%c%c%c%c%c%c%c%c%c%c", docidraw[0],docidraw[1],docidraw[2],docidraw[3],docidraw[4],docidraw[5],docidraw[6],docidraw[7],docidraw[8],docidraw[9],docidraw[10],docidraw[11],docidraw[12],docidraw[13],docidraw[14]);
+../Core/Src/main.c(256): warning:  #870-D: invalid multibyte character sequence
+              printf("å­˜å…¥æ–‡æ¡£æŸœæ—¶é—?:20%c%cå¹?%c%cæœ?%c%cæ—?%c%cæ—?%c%cåˆ?%c%cç§? \n",docidraw[0],docidraw[1],docidraw[2],docidraw[3],docidraw[4],docidraw[5],docidraw[6],docidraw[7],docidraw[8],docidraw[9],docidraw[10],docidraw[11],docidraw[12]);
+../Core/Src/main.c(256): warning:  #870-D: invalid multibyte character sequence
+              printf("å­˜å…¥æ–‡æ¡£æŸœæ—¶é—?:20%c%cå¹?%c%cæœ?%c%cæ—?%c%cæ—?%c%cåˆ?%c%cç§? \n",docidraw[0],docidraw[1],docidraw[2],docidraw[3],docidraw[4],docidraw[5],docidraw[6],docidraw[7],docidraw[8],docidraw[9],docidraw[10],docidraw[11],docidraw[12]);
+../Core/Src/main.c(256): warning:  #870-D: invalid multibyte character sequence
+              printf("å­˜å…¥æ–‡æ¡£æŸœæ—¶é—?:20%c%cå¹?%c%cæœ?%c%cæ—?%c%cæ—?%c%cåˆ?%c%cç§? \n",docidraw[0],docidraw[1],docidraw[2],docidraw[3],docidraw[4],docidraw[5],docidraw[6],docidraw[7],docidraw[8],docidraw[9],docidraw[10],docidraw[11],docidraw[12]);
+../Core/Src/main.c(256): warning:  #870-D: invalid multibyte character sequence
+              printf("å­˜å…¥æ–‡æ¡£æŸœæ—¶é—?:20%c%cå¹?%c%cæœ?%c%cæ—?%c%cæ—?%c%cåˆ?%c%cç§? \n",docidraw[0],docidraw[1],docidraw[2],docidraw[3],docidraw[4],docidraw[5],docidraw[6],docidraw[7],docidraw[8],docidraw[9],docidraw[10],docidraw[11],docidraw[12]);
+../Core/Src/main.c(256): warning:  #870-D: invalid multibyte character sequence
+              printf("å­˜å…¥æ–‡æ¡£æŸœæ—¶é—?:20%c%cå¹?%c%cæœ?%c%cæ—?%c%cæ—?%c%cåˆ?%c%cç§? \n",docidraw[0],docidraw[1],docidraw[2],docidraw[3],docidraw[4],docidraw[5],docidraw[6],docidraw[7],docidraw[8],docidraw[9],docidraw[10],docidraw[11],docidraw[12]);
+../Core/Src/main.c(256): warning:  #870-D: invalid multibyte character sequence
+              printf("å­˜å…¥æ–‡æ¡£æŸœæ—¶é—?:20%c%cå¹?%c%cæœ?%c%cæ—?%c%cæ—?%c%cåˆ?%c%cç§? \n",docidraw[0],docidraw[1],docidraw[2],docidraw[3],docidraw[4],docidraw[5],docidraw[6],docidraw[7],docidraw[8],docidraw[9],docidraw[10],docidraw[11],docidraw[12]);
+../Core/Src/main.c(256): warning:  #870-D: invalid multibyte character sequence
+              printf("å­˜å…¥æ–‡æ¡£æŸœæ—¶é—?:20%c%cå¹?%c%cæœ?%c%cæ—?%c%cæ—?%c%cåˆ?%c%cç§? \n",docidraw[0],docidraw[1],docidraw[2],docidraw[3],docidraw[4],docidraw[5],docidraw[6],docidraw[7],docidraw[8],docidraw[9],docidraw[10],docidraw[11],docidraw[12]);
+../Core/Src/main.c(256): warning:  #225-D: the format string ends before this argument
+              printf("å­˜å…¥æ–‡æ¡£æŸœæ—¶é—?:20%c%cå¹?%c%cæœ?%c%cæ—?%c%cæ—?%c%cåˆ?%c%cç§? \n",docidraw[0],docidraw[1],docidraw[2],docidraw[3],docidraw[4],docidraw[5],docidraw[6],docidraw[7],docidraw[8],docidraw[9],docidraw[10],docidraw[11],docidraw[12]);
+../Core/Src/main.c(262): warning:  #870-D: invalid multibyte character sequence
+              printf("å‘ç°æ–°æ–‡æ¡£ï¼Œå·²å…¥æŸ? \n");
+../Core/Src/main.c(263): warning:  #870-D: invalid multibyte character sequence
+              printf("å·²å­˜å‚?%dä»½æ–‡æ¡? \n", docnum);
+../Core/Src/main.c(263): warning:  #870-D: invalid multibyte character sequence
+              printf("å·²å­˜å‚?%dä»½æ–‡æ¡? \n", docnum);
+../Core/Src/main.c(264): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(screenstr, "%X%X%X%X", CardID[0], CardID[1], CardID[2], CardID[3]);
+../Core/Src/main.c(265): warning:  #870-D: invalid multibyte character sequence
+              printf("RFIDè¯†åˆ«å? %X%X%X%X\n", CardID[0], CardID[1], CardID[2], CardID[3]);
+../Core/Src/main.c(280): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(docid, "%02d%02d%02d%02d%02d%02d%X", ntime.year, ntime.month, ntime.dayofmonth, ntime.hour, ntime.minutes, ntime.seconds, CardID[3]);
+../Core/Src/main.c(282): warning:  #870-D: invalid multibyte character sequence
+              printf("è¿›å…¥æ–‡æ¡£æŸœæ—¶é—?:%då¹?%dæœ?%dæ—?%dæ—?%dåˆ?%dç§? \n",ntime.year, ntime.month, ntime.dayofmonth, ntime.hour, ntime.minutes, ntime.seconds);
+../Core/Src/main.c(282): warning:  #870-D: invalid multibyte character sequence
+              printf("è¿›å…¥æ–‡æ¡£æŸœæ—¶é—?:%då¹?%dæœ?%dæ—?%dæ—?%dåˆ?%dç§? \n",ntime.year, ntime.month, ntime.dayofmonth, ntime.hour, ntime.minutes, ntime.seconds);
+../Core/Src/main.c(282): warning:  #870-D: invalid multibyte character sequence
+              printf("è¿›å…¥æ–‡æ¡£æŸœæ—¶é—?:%då¹?%dæœ?%dæ—?%dæ—?%dåˆ?%dç§? \n",ntime.year, ntime.month, ntime.dayofmonth, ntime.hour, ntime.minutes, ntime.seconds);
+../Core/Src/main.c(282): warning:  #870-D: invalid multibyte character sequence
+              printf("è¿›å…¥æ–‡æ¡£æŸœæ—¶é—?:%då¹?%dæœ?%dæ—?%dæ—?%dåˆ?%dç§? \n",ntime.year, ntime.month, ntime.dayofmonth, ntime.hour, ntime.minutes, ntime.seconds);
+../Core/Src/main.c(282): warning:  #870-D: invalid multibyte character sequence
+              printf("è¿›å…¥æ–‡æ¡£æŸœæ—¶é—?:%då¹?%dæœ?%dæ—?%dæ—?%dåˆ?%dç§? \n",ntime.year, ntime.month, ntime.dayofmonth, ntime.hour, ntime.minutes, ntime.seconds);
+../Core/Src/main.c(282): warning:  #870-D: invalid multibyte character sequence
+              printf("è¿›å…¥æ–‡æ¡£æŸœæ—¶é—?:%då¹?%dæœ?%dæ—?%dæ—?%dåˆ?%dç§? \n",ntime.year, ntime.month, ntime.dayofmonth, ntime.hour, ntime.minutes, ntime.seconds);
+../Core/Src/main.c(282): warning:  #870-D: invalid multibyte character sequence
+              printf("è¿›å…¥æ–‡æ¡£æŸœæ—¶é—?:%då¹?%dæœ?%dæ—?%dæ—?%dåˆ?%dç§? \n",ntime.year, ntime.month, ntime.dayofmonth, ntime.hour, ntime.minutes, ntime.seconds);
+../Core/Src/main.c(286): warning:  #870-D: invalid multibyte character sequence
+              printf("å·²ä¿å­˜æ–‡æ¡£æ•°ï¼?%d\n", docnum);
+../Core/Src/main.c(290): warning:  #870-D: invalid multibyte character sequence
+              printf("æ–‡æ¡£åœ?%dè¡?%dåˆ? \n", docloca[0], docloca[1]);
+../Core/Src/main.c(290): warning:  #870-D: invalid multibyte character sequence
+              printf("æ–‡æ¡£åœ?%dè¡?%dåˆ? \n", docloca[0], docloca[1]);
+../Core/Src/main.c(290): warning:  #870-D: invalid multibyte character sequence
+              printf("æ–‡æ¡£åœ?%dè¡?%dåˆ? \n", docloca[0], docloca[1]);
+../Core/Src/main.c(291): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+              sprintf(screenstr, "H%dL%d", docloca[0], docloca[1]);
+../Core/Src/main.c: 40 warnings, 0 errors
+linking...
+Program Size: Code=17924 RO-data=2500 RW-data=3160 ZI-data=1840  
+FromELF: creating hex file...
+"rc522oledkeil\rc522oledkeil.axf" - 0 Error(s), 40 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.6.0.pack
+                ARM.CMSIS.5.6.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_rc522oledkeil
+  C:\Keil\Arm\Packs\ARM\CMSIS\5.6.0\CMSIS\Core\Include
+  C:\Keil\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.3.0
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

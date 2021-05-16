@@ -1,0 +1,4 @@
+Load "rc522oledkeil\\rc522oledkeil.axf" 
+Error: Not a genuine ST Device! Abort connection. 
+Erase Done.Programming Done.Verify OK.Application running ...
+Flash Load finished at 22:14:17
